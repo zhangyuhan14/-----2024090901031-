@@ -1,4 +1,7 @@
-解题代码：
+#题目3
+##解题代码：
+```markdown
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -331,25 +334,25 @@ h1{
     </script>
 </body>
 </html>
-
-JavaScript 基础 DOM 操作学习笔记与收获
-一、核心知识点梳理
-（1）获取元素
+```
+##JavaScript 基础 DOM 操作学习笔记与收获
+###核心知识点梳理
+1. 获取元素
 要操作元素，首先需要定位元素，下面有几种常见的定位元素方式：
-1.通过 ID 获取：const element = document.getElementById("id名");
-2.通过类名获取：const elements = document.getElement(s)ByClassName("类名")，如果是多个元素，则需通过索引（如 elements[0]）或遍历来获取单个元素。
-3.通过 CSS 选择器获取，这种方式更灵活，如果是单个元素，就使用const element = document.querySelector("CSS选择器"); 如果是多个元素，就使用const elements = document.querySelectorAll("CSS选择器"); 
-（2）添加事件
+  1. 通过 ID 获取：const element = document.getElementById("id名");
+  2. 通过类名获取：const elements = document.getElement(s)ByClassName("类名")，如果是多个元素，则需通过索引（如 elements[0]）或遍历来获取单个元素。
+  3. 通过 CSS 选择器获取，这种方式更灵活，如果是单个元素，就使用const element = document.querySelector("CSS选择器"); 如果是多个元素，就使用const elements = document.querySelectorAll("CSS选择器"); 
+2. 添加事件
 事件是用户与页面的交互行为，通过事件监听可在行为触发时执行java代码。常见的事件类型有：click：点击；mouseenter：鼠标移入该区域；mouseleave：鼠标移出该区域；keydown：键盘按下；load：页面加载完成。
-（3）控制元素的类名
+3. 控制元素的类名
 通过操作元素的class属性，可动态修改元素样式。
 通过 classList 操作更灵活，有以下几个常见的操作：1.添加类名：element.classList.add("className")；2.移除类名：element.classList.remove("className")；3.切换类名（存在则移除，不存在则添加）：element.classList.toggle("className")；
-（4）java的相关变量：
-1.let 声明的变量只在 let 命令所在的代码块 {} 内有效，在 {} 之外不能访问；
-2.在函数体内使用 var 和 let 关键字声明的变量类似,它们的作用域都是局部的;                                                                                
-3.使用 var 关键字声明的变量在任何地方都可以修改，在相同的作用域或块级作用域中，不能使用 let 关键字来重置 let 关键字声明的变量;但let、const关键字在不同作用域，或不同块级作用域中是可以重新声明赋值的;
-4.const 用于声明一个或多个常量，声明时必须进行初始化，且初始化后值不可再修改，使用 const 定义的对象或者数组其实是可变的，但是不能对常量对象重新赋值。
-二、学习收获与感悟（遇到的问题及解决方式）
-（1）对于java的弹窗，一开始其实我是想修改一下弹窗的样式，但是去查了发现如果用alert弹窗是不能修改样式的，就没有再改；
-（2）对于定时默认菜单切换和高亮菜单选项，一开始是不知道怎么使用java实现，后来知道可以用class属性来操控元素的样式；
-（3）对于计时器，一开始漏掉了那个“，1000”然后运行不了，之后了解到了它的结构是函数+“，1000”。
+4. java的相关变量：
+  1. let 声明的变量只在 let 命令所在的代码块 {} 内有效，在 {} 之外不能访问；
+  2. 在函数体内使用 var 和 let 关键字声明的变量类似,它们的作用域都是局部的;                                                                                
+5. 使用 var 关键字声明的变量在任何地方都可以修改，在相同的作用域或块级作用域中，不能使用 let 关键字来重置 let 关键字声明的变量;但let、const关键字在不同作用域，或不同块级作用域中是可以重新声明赋值的;
+6. const 用于声明一个或多个常量，声明时必须进行初始化，且初始化后值不可再修改，使用 const 定义的对象或者数组其实是可变的，但是不能对常量对象重新赋值。
+###学习收获与感悟（遇到的问题及解决方式）
+1. 对于java的弹窗，一开始其实我是想修改一下弹窗的样式，但是去查了发现如果用alert弹窗是不能修改样式的，就没有再改；
+2. 对于定时默认菜单切换和高亮菜单选项，一开始是不知道怎么使用java实现，后来知道可以用class属性来操控元素的样式；
+3. 对于计时器，一开始漏掉了那个“，1000”然后运行不了，之后了解到了它的结构是函数+“，1000”。
